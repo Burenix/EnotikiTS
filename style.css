@@ -1,0 +1,112 @@
+body {
+    background: linear-gradient(#999999, #9C9C9C, #999999);
+  }
+  
+.wrap {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+align-items: stretch;
+gap: 20px;
+}
+
+.wrap div {
+border: 2px solid #1e1e2e;
+height: 294px;
+}
+  
+#modal-content, 
+#modal-content1 {
+    display: none;
+    position: absolute;
+    z-index: 9999999;
+    background-image: url(./image/Злойй.png);
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+    padding: 0px 20px; 
+    border: 4px solid red;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2), 0 16px 20px rgba(0,0,0,0.2);
+    border-radius: 30px;
+}
+
+#modal-content1 {
+    background-image: url(./image/вин_ура.jpg);
+    border: 4px solid #33CC66;
+}
+
+#modal-close, 
+#modal-close1 {
+    display: inline-block;
+    margin: 40px 6px 4px 50px;
+    text-decoration: none;
+    position: relative;
+    font-size: 16px;
+    padding: 8px 8px;
+    color: #FFF;
+    font-weight: bold;
+    text-transform: uppercase; 
+    background: #C41E3A;
+    pointer-events: auto;
+    border-radius: 30px;
+}
+
+#modal-close1 {
+    background: #33CC66;
+}
+
+#modal-close:hover, 
+#modal-close1:hover {
+    color: #FFF;
+}
+#modal-close:after,
+#modal-close:before,
+#modal-close1:after,
+#modal-close1:before {
+    position: absolute;
+    height: 2px;
+    left: 50%;
+    background: #C41E3A;
+    bottom: -6px;
+    content: "";
+    transition: all 280ms ease-in-out;
+    width: 0;
+}
+
+#modal-close1:after,
+#modal-close1:before {
+    background: #33CC66;
+}
+
+#modal-close:before, 
+#modal-close1:before {
+    top: -6px;
+}
+#modal-close:hover:after,
+#modal-close:hover:before,
+#modal-close1:hover:after,
+#modal-close1:hover:before {
+    width: 100%;
+    left: 0;
+}
+
+.loseBlin,
+.winUra {
+    position: relative;
+    left:20px;
+    bottom: 1px;
+    font-size: 40px;
+    color: red;
+    font-family: cursive;
+}
+
+.winUra {
+    color: #33CC66;
+}
+
+a {
+    font-family: cursive;
+}
